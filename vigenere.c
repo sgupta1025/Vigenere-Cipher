@@ -5,8 +5,11 @@ Period 3
 PSET2
 vigenere
 */
+
+//Created for APCSP Class
 #include <stdio.h>
 #include<stdlib.h>
+#include<cs50.h>
 #include <string.h>
 #include<ctype.h>
 
@@ -19,7 +22,7 @@ int main(int argc, string argv[]){
     char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     char lower[] = "abcdefghijklmnopqrstuvwxyz";
     string keyword = argv[1];
-    string input = scanf(“%s”);
+    string input = GetString();
     char result[strlen(input)];
      for(int i =0; i < strlen(input); i++){
          char keyToInt = keyword[i%strlen(keyword)];
